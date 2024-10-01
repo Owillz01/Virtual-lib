@@ -6,6 +6,7 @@ class Book extends Media{
         this.author = author
         this.numPages = numPages
         this.rating = rating
+        Media.ALL_MEDIA.push(this)
     }
 
     summary(){
@@ -17,6 +18,15 @@ class Book extends Media{
         return sorted[0]
         // console.log(sorted, 'sorted hopefully');
         
+    }
+
+    static calculateAverageRating(books){
+        let aveRating = 0
+        books.forEach(book => {
+            aveRating += book.rating
+        });
+
+        return aveRating = aveRating/books.length
     }
 }
 // create your Book class:
