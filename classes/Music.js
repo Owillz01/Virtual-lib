@@ -6,6 +6,8 @@ class Music extends Media {
         super(title, year, genre);
         this.artist = artist;
         this.length = length
+        Media.ALL_MEDIA.push(this);
+        console.log(Media.ALL_MEDIA);
     }
     
     summary() {
