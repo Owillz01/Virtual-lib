@@ -9,7 +9,7 @@ class Media{
     }
 
     summary(){
-        returns `Title: ${this.title}, Year: ${this.year}, Genre: ${this.genre}`
+        return `Title: ${this.title}, Year: ${this.year}, Genre: ${this.genre}`
     }
 }
 // uncomment below to export it:

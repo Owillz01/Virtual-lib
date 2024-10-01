@@ -9,7 +9,7 @@ class Book extends Media{
     }
 
     summary(){
-        returns`Title: ${this.title}, Author: ${this.author}, Year: ${this.year}, Page Count: ${this.numPages}, Genre: ${this.genre}, Rating: ${this.rating}`;
+        return`Title: ${this.title}, Author: ${this.author}, Year: ${this.year}, Page Count: ${this.numPages}, Genre: ${this.genre}, Rating: ${this.rating}`;
     }
 
     static highestRating(books){
